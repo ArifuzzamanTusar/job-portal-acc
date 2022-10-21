@@ -14,13 +14,7 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         required: [true, 'Password filed is required'],
-        // validate: {
-        //     validator: (value) =>
-        //         validator.isStrongPassword(value, {
-        //             minLength: 5,
-        //         }),
-        //     message: "Password {VALUE} is not strong enough.",
-        // },
+     
     },
     confirmPassword: {
         type: String,
